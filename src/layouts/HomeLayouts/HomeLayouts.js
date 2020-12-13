@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
-import Footer from "../../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
+import NavbarIndex from "../../components/Navbar/Index";
 
 const HomeLayouts = ({ children }) => {
   return (
     <React.Fragment>
-      <Navbar />
+      <NavbarIndex />
       {children}
       <Footer />
     </React.Fragment>

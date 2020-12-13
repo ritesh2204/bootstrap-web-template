@@ -1,210 +1,184 @@
-body {
-  background: #fff;
-  /* fallback for old browsers */
+ul {
+  list-style-type: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
 
-h4 {
-  color: #152766;
-  font-weight: 700;
+.f-14 {
+  font-size: 0.8rem;
 }
 
-.fw400 {
-  font-weight: 500;
+navbar-nav li {
+  display: inline;
+  margin-right: 8px;
 }
 
-span img {
-  width: 20px;
-  height: 20px;
+.f-20 {
+  font-size: 1rem;
 }
 
-card {
-  border: 0;
+.p-10 {
+  padding: 10px;
+}
+.social-links {
+  font-size: 0.9em;
 }
 
-.roboto {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0px;
-  font-weight: 300;
-  line-height: 1.4;
-  font-size: 16px;
+.bg-light-grey {
+  background: #edeff1;
 }
 
-.text-primary {
-  color: #152766 !important;
+.debug {
+  border: 1px solid red;
 }
 
-.pill {
-  background-color: #f8f9fa;
-  border-radius: 50px;
-  padding: 8px 15px 8px 15px;
-  font-size: 1em;
-  letter-spacing: 0px;
-  -webkit-box-shadow: -2px -2px 4px rgba(250, 250, 250, 0.81), 2px 2px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: -2px -2px 4px rgba(250, 250, 250, 0.81), 2px 2px 4px rgba(0, 0, 0, 0.1);
+.text-dark-blue {
+  color: #0f3661;
 }
 
-.pill:hover {
-  -webkit-box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.65), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.65), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+.responsive-logo {
+  margin: 19px 0 0 0;
+}
+.text-gunpowder {
+  color: #42435d;
 }
 
-.card-body {
-  padding-top: 0px !important;
+.border-yellow {
+  width: 20%;
+  height: 5px;
+  padding-top: 0.9rem;
+  border-bottom: 5px solid#f2c21a;
 }
 
-.lato {
-  font-family: "Lato", sans-serif;
+.responsive-address {
+  display: block;
 }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
+.bg-dark-blue {
+  background: #0f3661;
 }
 
-.middlecard {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.navbar-nav li:hover {
+  background: #f2c21a;
+}
+.navbar-nav li a:hover {
+  color: #0f3661 !important;
+}
+.btn-buttercup {
+  background: #f2c21a;
+}
+.btn-downriver {
+  background: #0f3661;
 }
 
-.btn {
-  background: -webkit-gradient(linear, left top, right top, from(#58598e), to(#1f3068));
-  background: linear-gradient(to right, #58598e, #1f3068);
+.navbar-nav li {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
-.borderRadius {
-  background: #7f00ff;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#e100ff), to(#7f00ff));
-  background: linear-gradient(to right, #e100ff, #7f00ff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
-          clip-path: polygon(0 0, 50% 100%, 100% 0);
-  /* border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%; */
+.banner-img-bg {
+  background-image: url("/banner-image/banner-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bg-secondary {
-  background-color: rgba(132, 149, 209, 0.2) !important;
+.text-mirage {
+  color: #182331;
 }
 
-.mt-6 {
-  margin-top: 70px !important;
+.text-shuttlegray {
+  color: #646a7c;
 }
 
-.profileimg {
-  width: 8em;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border: 1px dashed #152766;
-  margin: auto;
-  margin-top: 35px;
-}
-
-img:hover {
-  border: 1px dashed #e3e3e3;
-  padding: 5px;
-  border-radius: 50px;
-}
-
-.bg-primary {
-  background-color: #1f306e !important;
-}
-
-.call-to-action {
-  width: 20px;
-  height: 20px;
-}
-
-.rectIcon {
-  width: 39px;
-  height: 39px;
-  /* border: 1px solid red; */
-  padding: 8px 14px;
-  background-color: rgba(132, 149, 209, 0.2);
-  border-radius: 50px 0 0 50px;
-  -webkit-box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.65), 2px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.65), 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-.rectIcon:hover {
-  -webkit-box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.65), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.65), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-span.img {
-  width: 15px !important;
-}
-
-.card {
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  border: 0;
-  border-radius: 8px;
-}
-
-a:hover {
-  background-color: #ff5f6d;
-}
-
-.socialiconsize {
-  font-size: 1.2em;
-}
-
-.bg-secondary {
-  background: #e6e9f5;
-}
-
-.boxShadow {
-  -webkit-box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, 0.37);
-  box-shadow: -1px 0px 13px 0px rgba(0, 0, 0, 0.37);
-}
-
-.container {
-  width: 100%;
-  position: absolute;
+.service-box {
+  border: 1px solid #ebebeb;
+  margin-bottom: 30px;
   overflow: hidden;
-  -webkit-animation: animate 2s linear forwards;
-          animation: animate 2s linear forwards;
+  padding: 38px 45px 34px 39px;
+  background-color: #ffffff;
 }
 
-@-webkit-keyframes animate {
-  0% {
-    top: 0px;
-    height: 0px;
-    opacity: 0;
-  }
-  25% {
-    height: 25%;
-  }
-  75% {
-    height: 75%;
-  }
-  100% {
-    height: 100%;
-    opacity: 1;
-  }
+.bg-Porcelain {
+  background: #edeff1;
 }
 
-@keyframes animate {
-  0% {
-    top: 0px;
-    height: 0px;
-    opacity: 0;
+.project-img img {
+  width: 25%;
+  height: auto;
+}
+
+.bg-sanjuan {
+  background: #364f6f;
+}
+
+input[type="text"] {
+  padding: 23px !important;
+}
+
+.text-lavender {
+  color: #b5b7d2;
+}
+.s-fa-size {
+  font-size: 3rem;
+}
+
+.s-m {
+  margin-top: -6rem;
+  z-index: -1;
+}
+
+footer a {
+  color: #b5b7d2 !important;
+}
+
+.footer-bg-dark-blue-color {
+  background: #0d2034;
+}
+
+footer div ul {
+  list-style: none;
+  line-height: 2;
+}
+
+footer li {
+  font-size: 14px;
+}
+
+.widget-info {
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 3px 20px 0px 0px;
+
+  border: 1px solid #ebebeb;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ctabg {
+  background-image: linear-gradient(
+      rgba(15, 54, 97, 0.8),
+      rgba(15, 54, 97, 0.8)
+    ),
+    url("/banner-image/banner-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive-logo {
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
-  25% {
-    height: 25%;
-  }
-  75% {
-    height: 75%;
-  }
-  100% {
-    height: 100%;
-    opacity: 1;
+
+  .responsive-address {
+    text-align: center;
   }
 }
-/*# sourceMappingURL=App.css.map */

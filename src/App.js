@@ -1,41 +1,23 @@
 import React from "react";
-// import { BrowserRouter as Router, Route } from "react-router-dom";
-import fire from "./fire";
-import Editor from "./Editor/Editor";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import HomeLayouts from "./layouts/HomeLayouts/HomeLayouts";
+import Home from "./pages/Home";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedNoteIndex: null,
-      selectedNote: null,
-      notes: null,
-    };
-  }
-  render() {
-    return (
-      <div>
-        <Editor />
-      </div>
-    );
-  }
+const HomePage = () => (
+  <HomeLayouts>
+    <Home />
+  </HomeLayouts>
+);
 
-  componentDidMount = () => {
-    fire
-      .firestore()
-      .collection("notes")
-      .onSnapshot((serverUpdate) => {
-        const notes = serverUpdate.docs.map((_doc) => {
-          const data = _doc.data();
-          data["id"] = _doc.id;
-          return data;
-        });
-        console.log(notes);
-        this.setState({
-          notes: notes,
-        });
-      });
-  };
-}
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" component={HomePage} />
+      </Switch>
+    </Router>
+  );
+};
 
 export default App;
